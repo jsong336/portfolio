@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(250, 240, 227);
+}
+
+hr{
+    display: block; 
+    border-top: 0.1rem solid white;
+}
+
+.content{
+    background-color : rgba(0, 0, 0, .3);
+    color: white;
+    border-radius: 0.3rem;
+    padding: 2rem;
+    border: solid white 0.1rem;
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+div.content{
+    min-height: 15rem;
+    max-height: 30rem;
+    min-width: 50rem;
+    max-width: 160rem;
+}
+h2.content{
+    text-align: left;
+}
+
+/*
+.paragraph{
+    border:solid white 1px;
+    background-color: rgb(0, 25, 40, 0.8);
+    border-radius: 0.5rem;
+    color:white;
+}
+*/
