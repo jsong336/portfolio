@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(250, 240, 227);
+    /*background-color: rgb(250, 240, 227);*/
+    background-color: gainsboro
 }
 
 hr{
@@ -17,9 +18,10 @@ hr{
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
 div.content{
     min-height: 15rem;
-    max-height: 30rem;
+    max-height: 100rem;
     min-width: 50rem;
     max-width: 160rem;
 }

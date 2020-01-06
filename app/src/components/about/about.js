@@ -5,7 +5,9 @@ import Projects from './projects';
 const AboutStyle = {
     padding:"0 8rem 1rem 8rem",
     fontSize:"1.5rem",
-    textAlign:"center"
+    textAlign:"center",
+    border:"solid white",
+    borderWidth:"0.3rem 0.3rem"
 }
 
 class About extends Component{
@@ -18,5 +20,4 @@ class About extends Component{
         );
       }
 }
-
 export default About;

@@ -1,14 +1,13 @@
 import React, {Component} from 'react';
-import marked from "marked";
-import {Button, Container} from 'react-bootstrap'
-
-const ButtonStyle = {
-    margin:"1rem"
-}
+import { Container } from 'react-bootstrap'
+import ProjectDetail from './project-detail';
 
 const ProjectStyle = {
     border:"solid white",
     borderRadius:"1rem",
+    margin:"1rem 0",
+    height: "20rem",
+    padding: "1rem 0.5rem"
 }
 
 class Project extends Component{
@@ -21,36 +20,49 @@ class Project extends Component{
         super();
     }
 
-    toggleIsHover = () =>{
+    IsHover = () =>{
         this.setState({
-            isHover: !this.state.isHover 
+            isHover: true
         });
+    }
+
+    NoIsHover = () =>{
+        this.setState(
+            {
+                isHover: false
+            }
+        )
     }
 
     render(){
         let projectDetail = "";
+        
+        const hoverStyle = {
+            ...ProjectStyle,
+            padding:"35% 0"
+            //background:"rgb(255, 255, 255, 0.4)",
+        }
+
         if(this.state.isHover){
             projectDetail = (
-                <div>
-                    <Button variant="outline-light" style={ButtonStyle}>View Detail</Button>
-                    <Button variant="outline-light">Go to Github</Button>
-                </div>
+                <ProjectDetail git={this.props.git} md="../../markdown/test.md"/>
             );
         }
+
         else{
             projectDetail = (
                 <div>
+                    <h3>{this.props.title}</h3>
                     <Container>
-                        {this.props.summary}
+                        {this.props.children}
                     </Container>
                 </div>
             )
         }
         return (
-            <Container onMouseEnter={this.toggleIsHover} onMouseLeave={this.toggleIsHover} style={ProjectStyle}>
-                <h3>{this.props.title}</h3>
-                {projectDetail}
-            </Container>
+            <Container onMouseOver={this.IsHover} onMouseLeave={this.NoIsHover} style={this.state.isHover?hoverStyle:ProjectStyle}>
+                { projectDetail }
+            </Container> 
             
         );
     }
