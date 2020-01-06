@@ -7,16 +7,16 @@ const ContactStyle = {
     backgroundRepeat:"repeat",
     height:"60vh",
     textAlign:"center",
-    border:"solid red",
+    //border:"solid red",
     overflow:"scroll"
 }
 
 const ContactDivStyle = {
-    border:"solid red",    
+    //border:"solid red",    
     margin:"2vh"
 }
 const ContactContentStyle = {
-    border:"solid red",
+    //border:"solid red",
     margin:"5% 10%"  
 }
 

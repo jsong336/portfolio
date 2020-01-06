@@ -4,12 +4,12 @@ import Project from './project';
 
 const ProjectsStyle = {
     margin:"0.5rem",
-    border:"solid red"
+    //border:"solid red"
 }
 
 const ProjectsDivStyle = {
     margin:"0 5%",
-    border:"solid red" 
+    //border:"solid red" 
 }
 
 const Projects = () =>{

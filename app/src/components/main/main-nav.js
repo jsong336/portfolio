@@ -1,10 +1,6 @@
 import React from 'react'
-import { Navbar, NavbarBrand, Nav, Image, NavItem} from 'react-bootstrap';
+import { Navbar, NavbarBrand, Nav} from 'react-bootstrap';
 import NavbarCollapse from 'react-bootstrap/NavbarCollapse';
-
-const NavStyle = {
-    //backgroundColor : "rgba(0, 0, 0, 0.5)",
-}
 
 const MainNav = () =>{
     return (

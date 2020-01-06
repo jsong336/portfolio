@@ -3,25 +3,25 @@ import { Image, Button, Row, Col } from 'react-bootstrap';
 
 const IntroductionDivStyle = {
     margin:"2vh",
-    border:"solid red",
+    //border:"solid red",
 }
 
 const IntroductionContentStyle = {
     textAlign:"center",
     margin:"13% 25%",
     paddingBottom:"1rem",
-    border:"solid red"
+    //border:"solid red"
 }
 
 const TextDivStyle = {
     margin:"1rem",
-    border:"solid red"
+    //border:"solid red"
 }
 
 const ImageButtonStyle = {
     margin: "0.3rem",
     marginBottom: "0.5rem",
-    border:"solid red"
+    //border:"solid red"
 }
 
 const IntroductionBox = () =>{

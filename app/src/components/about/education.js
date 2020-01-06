@@ -3,13 +3,13 @@ import { Row, Col } from 'react-bootstrap';
 
 const EducationDivStyle = {
     margin:"1%",
-    border:"solid green",
+    //border:"solid green",
     minWidth:"20%",
 }
 
 const EducationContentStyle = {
     margin:"0 5%",
-    border:"solid green",
+    //border:"solid green",
 }
 
 const Education = () =>{

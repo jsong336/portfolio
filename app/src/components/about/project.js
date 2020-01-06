@@ -16,7 +16,7 @@ const ProjectDivStyle = styled.div`
 `;
 
 const ProjectContentStyle = {
-    border:"solid red"
+    //border:"solid red"
 }
 
 class Project extends Component{

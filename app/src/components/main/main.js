@@ -7,7 +7,6 @@ const WelcomeStyle = {
   backgroundSize:"cover",  
   backgroundRepeat:"repeat",
   height: "100vh",
-  border:"solid red",
   overflow:"scroll"
 }
 

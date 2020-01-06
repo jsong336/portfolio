@@ -3,14 +3,14 @@ import { Image, Row, Col, Container } from 'react-bootstrap';
 
 const AboutMeDivStyle = {
     margin:"1%",
-    border:"solid red",
+    //border:"solid red",
     minWidth:"30%",
     maxWidth:"60%",
 }
 
 const AboutMeContentStyle = {
     margin:"0 5%",
-    border:"solid red"    
+    //border:"solid red"    
 }
 const AboutMe = () =>{
     return (

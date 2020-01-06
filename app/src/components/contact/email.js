@@ -3,11 +3,11 @@ import { Form, FormControl, Button } from 'react-bootstrap';
 
 const FormStyle = {
     padding:"1% 10%",
-    border:"solid red"
+    //border:"solid red"
 }
 
 const InputStyle = {
-    border:"solid red"    
+    //border:"solid red"    
 }
 
 const Email = () =>{

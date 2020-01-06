@@ -2,13 +2,13 @@ import React from 'react';
 
 const SkillsDivStyle = {
     margin:"1%",
-    border:"solid red",
+    //border:"solid red",
     minWidth:"40%",
 }
 
 const SkillsContentStyle = {
     margin:"0 1%",
-    border:"solid green",
+    //border:"solid green",
     textAlign:"left"
 }
 
