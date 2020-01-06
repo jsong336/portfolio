@@ -40,7 +40,8 @@ class ProjectDetail extends Component{
           })
     }
 
-    viewDetailHandler = () =>{
+    viewDetailHandler = (event) =>{
+        event.stopPropagation()
         this.setState(
             {
                 showDetail:true

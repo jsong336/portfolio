@@ -1,9 +1,10 @@
 import React from 'react';
-import { Image, Row, Col, Container } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 const EducationDivStyle = {
-    margin:"0.5rem",
-    border:"solid green"
+    margin:"1%",
+    border:"solid green",
+    minWidth:"20%",
 }
 
 const EducationContentStyle = {

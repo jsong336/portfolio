@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import {Row, Col} from 'react-bootstrap';
+import {Row, Col, Container} from 'react-bootstrap';
 import AboutMe from './about-me';
 import Projects from './projects';
 import Education from './education';
+import Skills from './skills';
 
 
 const AboutStyle = {
-    fontSize:"1.2rem",
+    fontSize:"100%",
     textAlign:"center",
     border:"solid white 0.3rem",
     border:"solid red",
@@ -22,15 +23,12 @@ class About extends Component{
         return (
             <div style={AboutStyle} id="about">
                 <div style={ AboutDivStyle }>
-                    <Row>
-                        <Col xs={8}><AboutMe/></Col>
-                        <Col>
-                            <Education/>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col><Projects/></Col>
-                    </Row>
+                    <div style={{display:"flex", flexWrap:"wrap", padding:"0", border:"solid red", justifyContent: "center"}}>
+                        <AboutMe/>
+                        <Education/>                        
+                        <Skills/>
+                    </div>
+                    <Projects/>
                 </div>
             </div>
         );

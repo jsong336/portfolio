@@ -1,30 +1,34 @@
 import React from 'react';
-import { Image, Row, Col, Container } from 'react-bootstrap';
 
 const SkillsDivStyle = {
     margin:"1%",
-    border:"solid red"
+    border:"solid red",
+    minWidth:"40%",
 }
 
 const SkillsContentStyle = {
-    margin:"0 5%",
+    margin:"0 1%",
     border:"solid green",
+    textAlign:"left"
+}
+
+const SkillContentDivStyle = {
+    padding: "0 0.5rem"
 }
 
 const Skills = () =>{
     return (
-        <div style={ SkillsDivStyle } className="content">               
-            <h2>Education</h2><hr/>
+        <div style={ SkillsDivStyle } className="content">             
+            <h2>Skills</h2><hr/>
             <div style={ SkillsContentStyle }>
-                <Row>
-                    <Col style={{textAlign:"left"}}><h4>Western University</h4></Col>
-                    <Col style={{textAlign:"right"}}>2017~2021</Col>
-                </Row>
-                <Row>
-                    <Col style={{textAlign:"left"}}>
-                        Bachelor of Engineering Science, Software Engineering (BESc)
-                    </Col>
-                </Row>
+                <h4>Language</h4>
+                <div style={SkillContentDivStyle}>
+                    <p>Python, SQL, JavaScript, Java/C#, C++, R</p>
+                </div>
+                <h4>Framework/Liberary</h4>
+                <div style={SkillContentDivStyle}>
+                    <p>TensorFlow, Numpy, Matplotlib, Scikit-learn, Express.js, React.js/Angular 8, Unity, JavaFX, MySQL, Mongoose</p>
+                </div>
             </div>
         </div>
     );

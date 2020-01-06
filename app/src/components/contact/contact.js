@@ -8,7 +8,7 @@ const ContactStyle = {
     height:"60vh",
     textAlign:"center",
     border:"solid red",
-    overflow:"hidden"
+    overflow:"scroll"
 }
 
 const ContactDivStyle = {

@@ -8,7 +8,7 @@ const WelcomeStyle = {
   backgroundRepeat:"repeat",
   height: "100vh",
   border:"solid red",
-  overflow:"hidden"
+  overflow:"scroll"
 }
 
 class Main extends Component{

@@ -40,7 +40,7 @@ const Projects = () =>{
                     </Col>
                 </Row>
             </div>
-            <Button variant="outline-light" href="https://github.com/jsong336?tab=repositories"  target="_blank">View More</Button>
+            <Button variant="outline-light" href="https://github.com/jsong336?tab=repositories" target = "_blank">View More</Button>
         </div>
     );
 }

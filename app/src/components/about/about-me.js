@@ -2,8 +2,10 @@ import React from 'react';
 import { Image, Row, Col, Container } from 'react-bootstrap';
 
 const AboutMeDivStyle = {
-    margin:"0.5rem",
-    border:"solid red"
+    margin:"1%",
+    border:"solid red",
+    minWidth:"30%",
+    maxWidth:"60%",
 }
 
 const AboutMeContentStyle = {
@@ -23,7 +25,7 @@ const AboutMe = () =>{
                         <p>Hello, my name is Jeongwon</p>
                         <p>A diligent, ambitious, and fast learning student in Software Engineering Science at Western University, who is willing to build experiences in
                             software designing, web-development, and machine learning.</p>
-                    </Col>
+                        </Col>
                 </Row>
             </div>
         </div>
