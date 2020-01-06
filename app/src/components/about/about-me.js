@@ -2,7 +2,7 @@ import React from 'react';
 import { Image, Row, Col, Container } from 'react-bootstrap';
 
 const AboutMeDivStyle = {
-    margin:"1%",
+    margin:"0.5rem",
     border:"solid red"
 }
 
@@ -16,10 +16,10 @@ const AboutMe = () =>{
             <h2>About me</h2><hr/>
             <div style={ AboutMeContentStyle }>
                 <Row>
-                    <Col xs={ 2 }>
+                    <Col xs={ 3 } style={{padding:"1rem"}}>
                         <Image src={ process.env.PUBLIC_URL + "/assets/me.jpg" } roundedCircle width="100%"></Image>                  
                     </Col>
-                    <Col xs={ 10 } style={{textAlign:"left"}}>
+                    <Col xs={ 9 } style={{textAlign:"left"}}>
                         <p>Hello, my name is Jeongwon</p>
                         <p>A diligent, ambitious, and fast learning student in Software Engineering Science at Western University, who is willing to build experiences in
                             software designing, web-development, and machine learning.</p>

@@ -1,49 +1,43 @@
 import React, {Component} from 'react';
 import { Container } from 'react-bootstrap'
 import ProjectDetail from './project-detail';
+import styled from 'styled-components';
 
-const ProjectStyle = {
-    border:"solid white",
-    borderRadius:"1rem",
-    margin:"1rem 0",
-    height: "20rem",
-    padding: "1rem 0.5rem"
+const ProjectDivStyle = styled.div`
+    border: solid white;
+    border-radius: 1rem;
+    margin:1rem 0;
+    height: 15em;
+    padding: 1rem 0.5rem;
+    overflow: auto;
+    &:hover{
+        border-color: #ffff99;
+    }
+`;
+
+const ProjectContentStyle = {
+    border:"solid red"
 }
 
 class Project extends Component{
     state = {
-        isHover:false,
-        //markdown: undefined
+        displayDetail:false,
     }
 
     constructor(title){
         super();
     }
 
-    IsHover = () =>{
+    toggleDisplayDetail = () =>{
         this.setState({
-            isHover: true
+            displayDetail: !this.state.displayDetail
         });
-    }
-
-    NoIsHover = () =>{
-        this.setState(
-            {
-                isHover: false
-            }
-        )
-    }
+    };
 
     render(){
         let projectDetail = "";
-        
-        const hoverStyle = {
-            ...ProjectStyle,
-            padding:"35% 0"
-            //background:"rgb(255, 255, 255, 0.4)",
-        }
-
-        if(this.state.isHover){
+    
+        if(this.state.displayDetail){
             projectDetail = (
                 <ProjectDetail title={this.props.title} git={this.props.git} md={this.props.md}/>
             );
@@ -59,37 +53,16 @@ class Project extends Component{
                 </div>
             )
         }
+
         return (
-            <Container onMouseOver={this.IsHover} onMouseLeave={this.NoIsHover} style={this.state.isHover?hoverStyle:ProjectStyle}>
-                { projectDetail }
-            </Container> 
-            
+            <ProjectDivStyle onClick={this.toggleDisplayDetail}>
+                <div style={ ProjectContentStyle }>
+                    { projectDetail }
+                </div> 
+            </ProjectDivStyle>
+           
         );
     }
-    /*
-    componentDidMount() {
-        const readmePath = require("../../markdown/test.md");
-        fetch(readmePath)
-          .then(response => {
-            return response.text()
-          })
-          .then(text => {
-            this.setState({
-              markdown: marked(text)
-            })
-          })
-    }
-
-    render() {
-        const { markdown } = this.state;
-      
-        return (
-          <section>
-            <article dangerouslySetInnerHTML={{__html: markdown}}></article>
-          </section>
-        )
-      }
-      */
 }
 
 export default Project;
