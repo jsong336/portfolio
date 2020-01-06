@@ -3,7 +3,7 @@ import {Button, Modal, Container} from 'react-bootstrap'
 import marked from "marked";
 
 const ButtonBoxStyle = {
-    padding: "1rem"
+    padding: "1rem",
 }
 
 const ButtonStyle = {
@@ -18,7 +18,7 @@ const ModalStyle = {
 const BodyStyle = {
     backgroundColor:"white",
     borderRadius:"1rem",
-    padding:"1rem"
+    padding:"1rem",
 }
 
 class ProjectDetail extends Component{
@@ -62,8 +62,8 @@ class ProjectDetail extends Component{
         return (
             <div>
                 <div style = {ButtonBoxStyle}>
-                    <Button variant="outline-light" style={ButtonStyle} onClick={this.viewDetailHandler}>View Detail</Button>
-                    <Button variant="outline-light" style={ButtonStyle} href={this.props.git} target="_blank">Go to Github</Button>
+                    <Button variant="dark" style={ButtonStyle} onClick={this.viewDetailHandler}>View Detail</Button>
+                    <Button variant="dark" style={ButtonStyle} href={this.props.git} target="_blank">Go to Github</Button>
                 </div>
                 <Modal show={this.state.showDetail} onHide={this.closeDetailHandler}
                     size="xl">

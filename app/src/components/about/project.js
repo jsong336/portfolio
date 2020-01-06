@@ -11,7 +11,9 @@ const ProjectDivStyle = styled.div`
     padding: 1rem 0.5rem;
     overflow: auto;
     &:hover{
-        border-color: #ffff99;
+        border-color: black;
+        background-color:"white";
+        color:black;
     }
 `;
 
@@ -55,7 +57,7 @@ class Project extends Component{
         }
 
         return (
-            <ProjectDivStyle onClick={this.toggleDisplayDetail}>
+            <ProjectDivStyle onClick={ this.toggleDisplayDetail } onMouseLeave={ ()=>this.setState({displayDetail:false})}>
                 <div style={ ProjectContentStyle }>
                     { projectDetail }
                 </div> 

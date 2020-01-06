@@ -5,6 +5,9 @@ import About from './components/about/about';
 import Contact from './components/contact/contact';
 
 class App extends Component{
+  componentDidMount() {
+    document.title = 'Portfolio';
+  }
   render(){
     return (
       <div>

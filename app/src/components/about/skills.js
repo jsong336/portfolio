@@ -22,11 +22,11 @@ const Skills = () =>{
             <h2>Skills</h2><hr/>
             <div style={ SkillsContentStyle }>
                 <h4>Language</h4>
-                <div style={SkillContentDivStyle}>
+                <div style={ SkillContentDivStyle }>
                     <p>Python, SQL, JavaScript, Java/C#, C++, R</p>
                 </div>
-                <h4>Framework/Liberary</h4>
-                <div style={SkillContentDivStyle}>
+                <h4>Framework/Library</h4>
+                <div style={ SkillContentDivStyle }>
                     <p>TensorFlow, Numpy, Matplotlib, Scikit-learn, Express.js, React.js/Angular 8, Unity, JavaFX, MySQL, Mongoose</p>
                 </div>
             </div>
