@@ -2,15 +2,19 @@ import React, {Component} from 'react'
 import MainNav from './main-nav'
 import IntroductionBox from './introduction'
 
-const MainStyle = {
-    height: "100vh",
-    //margin:"0",
+const WelcomeStyle = {
+  backgroundImage: `url(${process.env.PUBLIC_URL+"/assets/background1.jpg"})`,
+  backgroundSize:"cover",  
+  backgroundRepeat:"repeat",
+  height: "100vh",
+  border:"solid red",
+  overflow:"hidden"
 }
 
 class Main extends Component{
     render(){
         return (
-          <div style={ MainStyle } id="main">       
+          <div id="main" style={WelcomeStyle}>       
             <MainNav/>
             <IntroductionBox/>
           </div>

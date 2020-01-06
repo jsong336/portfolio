@@ -3,19 +3,25 @@ import AboutMe from './about-me';
 import Projects from './projects';
 
 const AboutStyle = {
-    padding:"0 8rem 1rem 8rem",
-    fontSize:"1.5rem",
+    fontSize:"1.2rem",
     textAlign:"center",
-    border:"solid white",
-    borderWidth:"0.3rem 0.3rem"
+    border:"solid white 0.3rem",
+    border:"solid red",
+}
+
+const AboutDivStyle = {
+    margin:"2vh",
+    border:"solid blue",
 }
 
 class About extends Component{
     render(){
         return (
             <div style={AboutStyle} id="about">
-                <AboutMe/>
-                <Projects/>
+                <div style={AboutDivStyle}>
+                    <AboutMe/>
+                    <Projects/>
+                </div>
             </div>
         );
       }

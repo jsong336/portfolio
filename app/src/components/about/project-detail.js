@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Button, Modal} from 'react-bootstrap'
+import {Button, Modal, Container} from 'react-bootstrap'
 import marked from "marked";
 
 const ButtonBoxStyle = {
@@ -10,6 +10,17 @@ const ButtonStyle = {
     margin:"0.5rem"
 }
 
+const ModalStyle = {
+    backgroundColor:"gainsboro",
+    color:"black"
+}
+
+const BodyStyle = {
+    backgroundColor:"white",
+    borderRadius:"1rem",
+    padding:"1rem"
+}
+
 class ProjectDetail extends Component{
     state = {
         showDetail:false,
@@ -17,11 +28,10 @@ class ProjectDetail extends Component{
     }
 
     componentDidMount() {
-
-        const mdPath = require("../../markdown/test.md");
+        const mdPath = this.props.md;
         fetch(mdPath)
           .then(response => {
-            return response.text()
+            return response.text();
           })
           .then(text => {
             this.setState({
@@ -54,26 +64,23 @@ class ProjectDetail extends Component{
                     <Button variant="outline-light" style={ButtonStyle} onClick={this.viewDetailHandler}>View Detail</Button>
                     <Button variant="outline-light" style={ButtonStyle} href={this.props.git} target="_blank">Go to Github</Button>
                 </div>
-                <Modal show={this.state.showDetail} onHide={this.closeDetailHandler}>
+                <Modal show={this.state.showDetail} onHide={this.closeDetailHandler}
+                    size="xl">
+                    <Container style={ ModalStyle }>
                     <Modal.Header closeButton>
-                    <Modal.Title>Modal heading</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body>
-                        <h1>etst</h1>
-                        <section style={{color:"black"}}>
-                            <article dangerouslySetInnerHTML={{__html: markdown}}></article>
-                        </section>
-                    </Modal.Body>
-                    <Modal.Footer>
-                    <Button variant="secondary" onClick={this.closeDetailHandler}>
-                        Close
-                    </Button>
-                    <Button variant="primary" onClick={this.closeDetailHandler}>
-                        Save Changes
-                    </Button>
-                    </Modal.Footer>
+                        <Modal.Title>{this.props.title}</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>
+                            <Container style={BodyStyle}>
+                                <section style={{color:"black"}}>
+                                    <article dangerouslySetInnerHTML={{__html: markdown}}></article>
+                                </section>
+                            </Container>
+                        </Modal.Body>
+                    </Container>
                 </Modal>
             </div>
+            //                        <Modal.Footer></Modal.Footer>
         );
     }
 }

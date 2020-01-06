@@ -15,16 +15,24 @@ const Projects = () =>{
             <h3>Projects</h3><hr/>
             <Row>
                 <Col>
-                <Project title="1D GAN" git="https://github.com/jsong336/1D-GAN">This is summary of the project blah blah blabh blahb e project blah blah blabh blah e project </Project>
+                    <Project title="1D GAN" git="https://github.com/jsong336/1D-GAN" md="https://raw.githubusercontent.com/jsong336/1D-GAN/master/README.md">
+                        Implementation of single dimensional Generative Adverserial Network which generates a point on a fixed graph using Tensorflows and Keras as Summer Undergraduate Research Project
+                    </Project>
                 </Col>
                 <Col>
-                    <Project title="A-Eye" git="https://github.com/hPark0811/AEye">This is summary of the project blah blah blabh blahb</Project>
+                    <Project title="A-Eye" git="https://github.com/hPark0811/AEye" md="https://raw.githubusercontent.com/hPark0811/AEye/master/README.md">
+                        Mobile application to assists people with visual impairment with voice user interface by using Android Studio, IBM-Watson API, Avaya API, AWS, MongoDB, Node.js Express.js
+                    </Project>
                 </Col>
                 <Col>
-                    <Project title="ForMe" git="https://github.com/hPark0811/">"This is summary of the project blah blah blabh blahb"</Project>
+                    <Project title="ForMe" git="https://github.com/hPark0811/ForMe" md="https://raw.githubusercontent.com/hPark0811/ForMe/master/README.md">
+                        TD mobile application to receive financial advice based on their spending habits. Winner of TD-Green Hack. Developed using Android-Studio, Sckit-Learn, AWS, TD-Davinci API. 
+                    </Project>
                 </Col>
                 <Col>
-                    <Project title="ImageScene" git="https://github.com/jsong336/ImageScene">This is summary of the project blah blah blabh blahb</Project>
+                    <Project title="Image Classification" git="https://github.com/jsong336/Intel-Image-Classification" md="https://raw.githubusercontent.com/jsong336/Intel-Image-Classification/master/README.md">
+                        Implementation of CNN Classifiers for images of 6 categories: building, forest, glacier, mountain, sea, street from Kaggle. 80 > validation accuracy. 
+                    </Project>
                 </Col>
             </Row>
         </Container>

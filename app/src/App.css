@@ -1,5 +1,4 @@
 body{
-    /*background-color: rgb(250, 240, 227);*/
     background-color: gainsboro
 }
 
@@ -11,20 +10,24 @@ hr{
 .content{
     background-color : rgba(0, 0, 0, .3);
     color: white;
-    border-radius: 0.3rem;
     padding: 2rem;
     border: solid white 0.1rem;
+    border-radius: 0.3rem;
+    /*
     position: relative;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    */
 }
-
+/*
 div.content{
     min-height: 15rem;
     max-height: 100rem;
     min-width: 50rem;
     max-width: 160rem;
 }
+*/
+
 h2.content{
     text-align: left;
 }

@@ -45,7 +45,7 @@ class Project extends Component{
 
         if(this.state.isHover){
             projectDetail = (
-                <ProjectDetail git={this.props.git} md="../../markdown/test.md"/>
+                <ProjectDetail title={this.props.title} git={this.props.git} md={this.props.md}/>
             );
         }
 

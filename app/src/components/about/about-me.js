@@ -1,27 +1,31 @@
 import React from 'react';
 import { Image, Row, Col, Container } from 'react-bootstrap';
 
-const AboutMeStyle = {
-    height:"35vh",
-    //backgroundColor: "rgb(250, 240, 227)"
+const AboutMeDivStyle = {
+    margin:"1%",
+    border:"solid red"
 }
 
+const AboutMeContentStyle = {
+    margin:"0 5%",
+    border:"solid red"    
+}
 const AboutMe = () =>{
     return (
-        <div style={AboutMeStyle} className="content">               
-            <Container>
+        <div style={ AboutMeDivStyle } className="content">               
             <h2>About me</h2><hr/>
-            <Row style={{padding:"2rem"}}>
-                <Col xs={ 3 }>
-                    <Image src={process.env.PUBLIC_URL + "/assets/me.jpg"} roundedCircle className="w-50"></Image>                  
-                </Col>
-                <Col></Col>
-                <Col xs={8} style={{textAlign:"left"}}>
-                    <p>Hello, my name is Jeongwon</p>
-                </Col>
-            </Row>
-            </Container>
-
+            <div style={ AboutMeContentStyle }>
+                <Row>
+                    <Col xs={ 2 }>
+                        <Image src={ process.env.PUBLIC_URL + "/assets/me.jpg" } roundedCircle width="100%"></Image>                  
+                    </Col>
+                    <Col xs={ 10 } style={{textAlign:"left"}}>
+                        <p>Hello, my name is Jeongwon</p>
+                        <p>A diligent, ambitious, and fast learning student in Software Engineering Science at Western University, who is willing to build experiences in
+                            software designing, web-development, and machine learning.</p>
+                    </Col>
+                </Row>
+            </div>
         </div>
     );
 }
