@@ -24,7 +24,9 @@ const ContactContentStyle = {
 const FooterStyle = {
     //textAlign:"left",
     padding:"1rem",
-    fontSize:"1rem"
+    fontSize:"1rem",
+    //borderTop:"solid white 0.01rem",
+    background:"rgba(255, 255, 255, 0.2)",
 }
 
 
@@ -83,7 +85,7 @@ class Contact extends Component{
                         <Email/>
                     </div>      
                 </div>
-                <footer style={FooterStyle}>
+                <footer style={ FooterStyle }>
                     <p>Email: jsong336@uwo.ca<br/>
                     Phone: 1 (647)550-3647</p>
                 </footer>

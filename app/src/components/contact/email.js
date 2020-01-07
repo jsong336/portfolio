@@ -25,7 +25,7 @@ const Email = () =>{
                 <FormControl 
                     as="textarea" 
                     placeholder="enter message ( formspree.io pop-up page )" 
-                    aria-label="Message"ß
+                    aria-label="Message"
                     name="body"
                     />
                 <br/>
