@@ -16,11 +16,11 @@ const AboutMe = () =>{
         <div style={ AboutMeDivStyle } className="content">               
             <h2>About me</h2><hr/>
             <div style={ AboutMeContentStyle }>
-                <div style={{display:"flex", padding:"0", justifyContent: "center" }}>
+                <div style={{display:"flex", flexWrap:"wrap", padding:"0", justifyContent: "center" }}>
                     <div style={{margin: "0 2%"}}>
-                        <Image src={ process.env.PUBLIC_URL + "/assets/me.jpg" } roundedCircle width="150px"></Image>                  
+                        <Image src={ process.env.PUBLIC_URL + "/assets/me.jpg" } roundedCircle width="150px" style={{border:"dotted white 2px"}}></Image>                  
                     </div>
-                    <div style={ {textAlign:"left", margin: "0 2%"} }>
+                    <div style={ {textAlign:"left", margin: "0 2%", maxWidth:"80%"} }>
                         <p>Hello, my name is Jeongwon</p>
                         <p>A diligent, ambitious, and fast learning student in Software Engineering Science at Western University, who is willing to build experiences in
                             software designing, web-development, and machine learning.</p>
