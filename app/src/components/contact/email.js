@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, FormControl, Button } from 'react-bootstrap';
+import { Form, FormControl, Button, FormLabel } from 'react-bootstrap';
 
 const FormStyle = {
     padding:"1% 10%",
@@ -14,21 +14,23 @@ const Email = () =>{
     return (
         <div style={ FormStyle }>
             <Form style={ InputStyle } action="http://formspree.io/jsong336@uwo.ca" method="POST" target="_blank">
+                <FormLabel>Name/Contact</FormLabel>
                 <FormControl
-                    placeholder="Your name or contact" 
+                    placeholder="enter name or contact" 
                     aria-label="Name or Contact"
-                    type="email"
+                    type="text"
                     name="_replyto"
-                    />
-                <br/>
+                    /><br/>
+                <FormLabel>Message</FormLabel>
                 <FormControl 
                     as="textarea" 
-                    placeholder="Message" 
-                    aria-label="Message"
+                    placeholder="enter message ( formspree.io pop-up page )" 
+                    aria-label="Message"ß
                     name="body"
                     />
                 <br/>
                 <Button variant={"outline-light"} type="submit">Send Email</Button>
+                <meta name="referrer" content="origin" />
             </Form>
         </div>
         );
