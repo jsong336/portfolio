@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Row, Col, Container} from 'react-bootstrap';
 import AboutMe from './about-me';
 import Projects from './projects';
 import Education from './education';
