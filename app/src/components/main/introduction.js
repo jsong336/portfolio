@@ -10,7 +10,7 @@ const IntroductionContentStyle = {
     textAlign:"center",
     margin:"13% 25%",
     paddingBottom:"1rem",
-    border:"solid red",
+    //border:"solid red",
     overflow:"scroll",
 }
 
