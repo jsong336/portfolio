@@ -22,8 +22,10 @@ const AboutMe = () =>{
                     </div>
                     <div style={ {textAlign:"left", margin: "0 2%", maxWidth:"80%"} }>
                         <p>Hello, my name is Jeongwon</p>
-                        <p>A diligent, ambitious, and fast learning student in Software Engineering Science at Western University, who is willing to build experiences in
-                            software designing, web-development, and machine learning.</p>
+                        <p>
+                            I'm a third year software engineering student at Western University with a passion for machine learning and web technologies.
+                            Over the past year, I worked with several projects involving different machine learning algorithms like neural network, k-mean, etc.
+                        </p>
                     </div>
                 </div>
             </div>
