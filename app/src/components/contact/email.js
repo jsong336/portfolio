@@ -13,11 +13,11 @@ const InputStyle = {
 const Email = () =>{
     return (
         <div style={ FormStyle }>
-            <Form style={ InputStyle } action="http://formspree.io/jsong336@uwo.ca" method="POST" target="_blank">
-                <FormLabel>Name/Contact</FormLabel>
+            <Form style={ InputStyle } action="http://formspree.io/jsong336@uwo.ca" method="POST">
+                <FormLabel>Email</FormLabel>
                 <FormControl
-                    placeholder="enter name or contact" 
-                    aria-label="Name or Contact"
+                    placeholder="your email" 
+                    aria-label="email"
                     type="text"
                     name="_replyto"
                     /><br/>
@@ -30,7 +30,7 @@ const Email = () =>{
                     />
                 <br/>
                 <Button variant={"outline-light"} type="submit">Send Email</Button>
-                <meta name="referrer" content="origin" />
+                <meta name="referrer" content="O; url=https://jsong336.github.io/portfolio"/>
             </Form>
         </div>
         );
