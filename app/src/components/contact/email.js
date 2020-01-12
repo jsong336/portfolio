@@ -30,7 +30,7 @@ const Email = () =>{
                     />
                 <br/>
                 <Button variant={"outline-light"} type="submit">Send Email</Button>
-                <meta name="referrer" content="O; url=https://jsong336.github.io/portfolio"/>
+                <meta name="referrer" content="original"/>
             </Form>
         </div>
         );
