@@ -30,7 +30,7 @@ const Email = () =>{
                     />
                 <br/>
                 <Button variant={"outline-light"} type="submit">Send Email</Button>
-                <meta name="referrer" content="original"/>
+                <meta name="referrer" content="origin"/>
             </Form>
         </div>
         );
