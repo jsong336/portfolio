@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
 import Project from './project';
 
@@ -13,9 +13,19 @@ const ProjectsDivStyle = {
 }
 
 const Projects = () =>{
+    const [showNote, setShowNote] = useState();
+    
+    const onMouseOverHandler = () =>{
+        setShowNote(1);
+    }
+    const onMouseLeaveHandler = () =>{
+        setShowNote(0)
+    }
+    
     return (
-        <div style={ProjectsStyle} className="content">       
+        <div style={ProjectsStyle} className="content" onMouseEnter={onMouseOverHandler} onMouseLeave={onMouseLeaveHandler}>       
             <h3>Projects</h3><hr/>
+            {showNote?<div>Please click project to view more detail</div>:<div></div>}
             <div style={ProjectsDivStyle}>  
                 <Row>
                     <Col>
