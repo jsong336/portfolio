@@ -9,6 +9,7 @@ class App extends Component{
     document.title = 'Portfolio';
   }
   render(){
+    console.log("Last updated "+ new Date());
     return (
       <div>
         <Main/>

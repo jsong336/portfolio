@@ -25,7 +25,7 @@ const Projects = () =>{
     return (
         <div style={ProjectsStyle} className="content" onMouseEnter={onMouseOverHandler} onMouseLeave={onMouseLeaveHandler}>       
             <h3>Projects</h3><hr/>
-            {showNote?<div>Please click project to view more detail</div>:<div></div>}
+            {showNote?<div>Please click project you are interested to view more detail</div>:<div></div>}
             <div style={ProjectsDivStyle}>  
                 <Row>
                     <Col>
