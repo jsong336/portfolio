@@ -24,7 +24,8 @@ const AboutMe = () =>{
                         <p>Hello, my name is Jeongwon</p>
                         <p>
                             I'm a third year software engineering student at Western University with a passion for machine learning and web technologies.
-                            Over the past year, I worked with several projects involving different machine learning algorithms like neural network, k-mean, etc.
+                            Over the past year, I worked with several projects involving different machine learning algorithms like neural network, k-mean, 
+                            as well as with web technologies like React.js, Express.js and Angular. 
                         </p>
                     </div>
                 </div>

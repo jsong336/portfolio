@@ -87,7 +87,9 @@ class Contact extends Component{
                 </div>
                 <footer style={ FooterStyle }>
                     <p>Email: jsong336@uwo.ca<br/>
-                    Phone: 1 (647)550-3647</p>
+                    Phone: 1 (647)550-3647<br/>
+                    Images: https://unsplash.com<br/>
+                    </p>
                 </footer>
             </div>
         );
